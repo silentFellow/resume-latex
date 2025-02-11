@@ -1,0 +1,110 @@
+\input{setup/preamble.tex}
+\input{setup/macros.tex}
+
+\begin{document}
+        %%% TItle %%%
+        \tcbset{colframe=title,colback=title,arc=0mm}
+        \begin{tcolorbox}
+    
+            \begin{minipage}{0.3\textwidth} % Picture Area
+                \includegraphics[width=0.8\textwidth]{profile.jpg} % Picture
+            \end{minipage} \hfill
+            \begin{minipage}{0.65\textwidth} % Name and Contact Info
+               \name{Gowtham.S}{\small Tech Enthusiast | Passionate Developer from India | Aficionado of CLI, Linux, and Open-Source | Crafting Elegant Solutions with Precision ⚡️} % Name and Profession
+                \vspace{1em}
+                \email{gowtham.sri@zohomail.in} $\cdot$
+                \phone{+91 739-58-31324} \par \vspace{0.5em}
+                \address{Tamil Nadu, India} $\cdot$
+                \github{https://github.com/silentFellow}{silentFellow} $\cdot$
+                \linkedin{https://www.linkedin.com/in/silentFellow}{silentFellow} $\cdot$
+                
+                \newcommand{\webpage}[2]{\href{#1}{\faGlobe\ #2}}
+                \webpage{https://gowtham-portfolio-5idn.onrender.com}{Portfolio}
+            \end{minipage}
+            
+        \end{tcolorbox}
+
+    %%% Sections %%%
+    \vspace*{-1em}
+    \tcbset{colframe=white,colback=white,arc=0mm, height=0.8\textheight}
+    \begin{tcolorbox}
+        \vspace*{-0.5em}
+        \begin{minipage}[t]{0.3\textwidth} % Side Panel (e.g. Skills, Links, Languages, etc.)
+            \begin{tcolorbox}[height=0.8\textheight, grow to left by=0.6cm,colback=backdrop,colframe=backdrop,arc=0mm]
+
+                % Skills, the skill level is drawn as bars, input: skill name and an array starting from 0 and ending before 4
+                \subsection*{Tech Stack}
+                    \skill{Golang}{0, 1, 2, 3,4}
+                    \skill{JavaScript/TypeScript \newline \textit \textit{(React, NextJs, NodeJs)}
+}{0, 1, 2,3,4}
+                    \skill{Python}{0, 1, 2, 3}
+                    \skill{C, C++, Java}{0, 1, 2,}
+
+                \subsection*{Tech Toolbox}
+                    {\LaTeXraggedright
+                        \cvtag{Linux (Advanced)}
+                        \cvtag{Neovim}
+                        \cvtag{Git}
+                        \cvtag{Docker}
+                        \cvtag{MongoDB}
+                        \cvtag{PostgresSQL}
+                        \cvtag{AWS}
+                        \cvtag{Markdown}
+                        \cvtag{Cred}
+                        \cvtag{Ente-Auth}
+                        \cvtag{Bruno}
+                    \par}
+
+                \subsection*{Strengths}
+                    {\LaTeXraggedright
+                        \cvtag{Curious}
+                        \cvtag{Smart-Working}
+                        \cvtag{Hard-Working}
+                        \cvtag{Leadership}
+                        \cvtag{Teamwork}
+                    \par}
+
+                \subsection*{Miscellaneous}
+                    1. 2025: MongoDB Associate Developer \newline
+                    2. 2024: 30-Hour Hackathon Winner \newline
+                    3. Published Paper on Enhanced Weather Prediction using ML \href{https://github.com/silentFellow/weatherPrediction.git}{(Link)}
+            \end{tcolorbox}
+        \end{minipage}
+        \begin{minipage}[t]{0.7\textwidth} % Main Panel (e.g. Education, Work Experience)
+            \begin{tcolorbox}[grow to right by=0.75cm,height=0.8\textheight,colframe=white,colback=white]
+
+
+                % Work Experience
+                \section*{Work Experience}
+                    \work{Freelancing at \href{https://greencollar.ai/}{greencollar.ai}}{Nov 2023 - April 2024}{}{}
+                    \work{Internship at greencollar.ai}{May 2024 - Jan 2025}{official website - internal admin access product}{Green Collar Agritech uses advanced algorithms and deep domain expertise to deliver real-time crop-based predictions, optimizing operations and ensuring product quality.}
+
+                % Education
+                \section*{Education}
+                    \education{B.Tech AIML - 8.84 CGPA}{Sep 2020 - Oct 2024}{Kongu Engineering College}{} \vspace{1em}
+                    \education{HSC - 92.03\%}{May 2021}{Navarasam Matric. Hr. Sec. School}{} \vspace{1em}
+                    \education{SSLC - 89.80\%}{May 2019}{Navarasam Matric. Hr. Sec. School}{}
+
+                % Publications
+                \section*{Projects}
+                    \cvevent{NeoUrl}{A simple, yet powerful URL shortener written in go + htmx.}{\httplink{https://neourl.onrender.com}}{}
+
+                    \divider
+
+                    \cvevent{Cred}{CLI tool for managing passwords and environment variables.}{\httplink{https://github.com/silentFellow/cred}}{}
+
+                    \divider
+
+                    \cvevent{Abstract-UI}{A Component library of reusable UI components for React and Next.js to speed up web development.}{\httplink{https://www.npmjs.com/package/@silentfellow/abstract-ui}}{}
+
+                    \divider
+
+                    \cvevent{NeoBlog}{A feature-rich blogging platform built with Next.js, includes authentication and rich text editing.}{\httplink{https://neoblog.onrender.com}}{}
+
+                    \divider
+                
+            \end{tcolorbox}
+        \end{minipage}
+    \end{tcolorbox}
+    
+\end{document}
