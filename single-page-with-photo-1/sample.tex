@@ -1,0 +1,246 @@
+%% spaces => \smallskip, \medskip, \bigskip, \vspace
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+%% AltaCV uses the fontawesome5 and simpleicons packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/simpleicons for full list of symbols.
+
+
+% ...and the markers for the date/location for \cvevent
+% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
+% \renewcommand{\cvLocationMarker}{\faMapMarker*}
+
+%% You can add your own arbitrary detail with
+%% \printinfo{symbol}{detail}[optional hyperlink prefix]
+% \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+\iftutex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+% ...and the markers for the date/location for \cvevent
+% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
+% \renewcommand{\cvLocationMarker}{\faMapMarker*}
+
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear.tex}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{pubs-num.tex}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+% \usepackage{academicons}\let\faOrcid\aiOrcid
+\begin{document}
+\name{Gowtham S}
+\tagline{Tech Enthusiast | Passionate Developer from India | Aficionado of CLI, Linux, and Open-Source | Crafting Elegant Solutions with Precision ⚡️}
+\photo{2.8cm}{profile}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{gowtham.sri@zohomail.in}
+  \phone{739-58-31324}
+  \mailaddress{132, Kavindachipalayam, Erode-638115}
+  \location{Tamilnadu, India}
+  \homepage{gowtham-portfolio-5idn.onrender.com}
+  \linkedin{silentFellow}
+  \github{silentFellow}
+
+  \newcommand{\faLeetCode}{\hspace{1mm}\includegraphics[height=1em]{leetcode.png}}
+\printinfo{\faLeetCode}{silentFellow}[https://leetcode.com/u/silentFellow]}
+
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+\cvsection{Experience}
+
+\cvevent{Freelancing at \href{https://greencollar.ai/}{greencollar.ai}}{}{November 2023 - April 2024}{India}
+
+\cvevent{Internship at greencollar.ai}{Green Collar Agritech uses advanced algorithms and deep domain expertise to deliver real-time crop-based predictions, optimizing operations and ensuring product quality.
+}{May 2024 - January 2025}{India}
+\begin{itemize}
+\item Developed the official website for Green Collar Agritech.
+\item Built an internal admin access product for model crop testing and analysis.
+\end{itemize}
+
+\cvsection{Projects}
+
+\cvevent{NeoUrl}{A URL shortener}{\httplink{https://neourl.onrender.com}}{}
+\begin{itemize}
+    \item A simple, yet powerful URL shortener written in go + htmx.
+\end{itemize}
+
+\divider
+
+\cvevent{Cred}{CLI tool for managing passwords and environment variables}{\httplink{https://github.com/silentFellow/cred}}{}
+\begin{itemize}
+    \item Encrypts data using a GPG key for secure storage.
+\end{itemize}
+
+\divider
+
+\cvevent{Abstract-UI}{Component Library for React and Next.js}{\httplink{https://www.npmjs.com/package/@silentfellow/abstract-ui}}{}
+\begin{itemize}
+    \item A library of reusable UI components to speed up web development.
+\end{itemize}
+
+\divider
+
+\cvevent{NeoBlog}{A feature-rich blogging platform}{\httplink{https://neoblog.onrender.com}}{}
+\begin{itemize}
+    \item Built with Next.js, includes authentication and rich text editing.
+\end{itemize}
+
+\divider
+
+\medskip
+
+\cvsection{Certifications}
+
+\cvevent{MongoDB Associate Developer}{MongoDB University}{\httplink{https://learn.mongodb.com/c/o4uMvThfQDuYpcjprIEyWg}}{}
+
+\switchcolumn
+
+\cvsection{Strengths}
+
+{\LaTeXraggedright
+\cvtag{Curious}
+\cvtag{Smart-Working}
+\cvtag{Hard-Working}
+\cvtag{Leadership}
+\cvtag{Teamwork}
+\par}
+
+\cvsection{Tech Stack}
+
+\cvskill{Golang}{5}
+\divider
+
+\cvskill{JavaScript/TypeScript}{5}
+\textit{(React, NextJs, NodeJs)}
+\divider
+
+\cvskill{Python}{4}
+\divider
+
+\cvskill{C, C++, Java}{3}
+\divider
+
+\cvsection{Tech Toolbox}
+
+{\LaTeXraggedright
+\cvtag{Linux (Advanced)}
+\cvtag{Neovim}
+\cvtag{Git}
+\cvtag{Docker}
+\cvtag{MongoDB}
+\cvtag{PostgresSQL}
+\cvtag{AWS}
+\cvtag{Markdown}
+\cvtag{Cred}
+\cvtag{Ente-Auth}
+\cvtag{Bruno}
+\par}
+
+\medskip
+
+\cvsection{Education}
+
+\cvevent{B.Tech AIML - 8.84 CGPA}{Kongu Engineering College}{Nov 2022 -- Ongoing}{}
+
+\divider
+
+\cvevent{HSC - 92.03\%}{Navarasam Matric. Hr. Sec. School}{May 2021}{}
+
+\divider
+
+\cvevent{SSLC - 89.80\%}{Navarasam Matric. Hr. Sec. School}{Mar 2019}{}
+89.08\%
+
+\divider
+
+\cvsection{Miscellaneous}
+
+\begin{itemize}
+    \item 2024: 30-Hour Hackathon Winner
+    \item 2023: Published Paper on Enhanced Weather Prediction using ML \href{https://github.com/silentFellow/weatherPrediction.git}{(Link)}
+    \item 2023: AI Association Member in College Department
+\end{itemize}
+
+
+\end{paracol}
+
+\end{document}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+% WHEN COMPILING WITH XELATEX PLEASE USE
+% xelatex -shell-escape -output-driver="xdvipdfmx -z 0" sample.tex
+
+%% For services and platforms like Mastodon where there isn't a
+%% straightforward relation between the user ID/nickname and the hyperlink,
+%% you can use \printinfo directly e.g.
+% \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+%% But if you absolutely want to create new dedicated info fields for
+%% such platforms, then use \NewInfoField* with a star:
+% \NewInfoField*{mastodon}{\faMastodon}
+%% then you can use \mastodon, with TWO arguments where the 2nd argument is
+%% the full hyperlink.
+% \mastodon{@username@instance}{https://instance.url/@username}
