@@ -106,7 +106,7 @@
     \vspace{0.3em}
     % School Name 
     \large
-    \noindent \color{title} \parbox{.7\linewidth}{\textsl{#3}} \par
+    \noindent \color{emphasis} \parbox{.7\linewidth}{\textsl{#3}} \par
     % Description
     \normalsize \color{black}
     \vspace*{0.3em}
@@ -123,7 +123,7 @@
     \tcbox[enhanced,box align=base,nobeforeafter,colback=title,colframe=title,size=fbox,arc=0mm]{\textbf{#2}} \par
     \vspace{0.3em}
     % Name of the Employer
-    \noindent \large \color{title} \parbox{.7\linewidth}{\textsl{#3}} \par
+    \noindent \large \color{emphasis} \parbox{.7\linewidth}{\textsl{#3}} \par
     % Description of the job
     \vspace*{0.3em} \color{black}
     \small #4 
@@ -148,20 +148,12 @@
 }
 
 \RequirePackage{accsupp}
+\definecolor{PastelBlack}{HTML}{292929} % PastelRed 8F0D0D
 \definecolor{SlateGrey}{HTML}{2E2E2E}
-\definecolor{LightGrey}{HTML}{666666}
-\definecolor{DarkPastelRed}{HTML}{450808}
-\definecolor{PastelRed}{HTML}{8F0D0D}
-\definecolor{GoldenEarth}{HTML}{E7D192}
-\colorlet{name}{black}
-\colorlet{tagline}{PastelRed}
-\colorlet{heading}{DarkPastelRed}
-\colorlet{headingrule}{GoldenEarth}
-\colorlet{subheading}{PastelRed}
-\colorlet{accent}{PastelRed}
+\colorlet{accent}{PastelBlack}
 \colorlet{emphasis}{SlateGrey}
-\colorlet{body}{LightGrey}
 
+% defined for my use
 \newcommand{\cvDateMarker}{\faCalendar[regular]}
 
 \newcommand{\cvevent}[5]{%

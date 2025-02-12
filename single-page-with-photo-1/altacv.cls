@@ -70,7 +70,7 @@
     \ifluatex\tutextrue\else\tutexfalse\fi
   \fi
 }{}
-\iftutex 
+\iftutex
   \RequirePackage{fontspec}
 \else
   %% v1.3.2 attempts to make ligatures
@@ -157,7 +157,7 @@
 %% v1.6: Use accsupp so that when copying/pasting the icon from PDF to a text
 %%       file, the icon name is pasted
 %% v1.7: Some tweaks/corrections so that accsupp is for icons only
-%% v1.7.1: Bugfix to support some symbol commands e.g. academicons commands 
+%% v1.7.1: Bugfix to support some symbol commands e.g. academicons commands
 \ExplSyntaxOn
 \NewDocumentCommand{\printinfo}{m m o}{%
   \IfNoValueTF{#3}{%
@@ -471,7 +471,7 @@
     }%
     \iftoggle{boldname}{\textbf{##1}}{##1}%
   }%
-% 
+%
   \renewcommand*{\mkbibnamegiven}[1]{%
     \global\togglefalse{boldname}%
     \foreach \my@fname / \my@gname in \my@namelist{%
@@ -497,4 +497,46 @@
     \color{body}%
     \raggedright%
   }
+}
+
+% defined for my use
+\newcommand{\cvproject}[6]{%
+  % Title with GitHub, Web links, and Extra link
+  {\large\color{emphasis}#1} \hfill
+  \ifstrequal{#2}{}{}{%
+    \hspace{0.5em}\href{#2}{\faGithub}%
+  }%
+  \ifstrequal{#3}{}{}{%
+    \ifstrequal{#2}{}{}{\hspace{0.5em}|}%
+  }%
+  \ifstrequal{#3}{}{}{%
+    \hspace{0.5em}\href{#3}{\faGlobe}%
+  }%
+  \ifstrequal{#4}{}{}{%
+    \ifstrequal{#4}{}{}{\hspace{0.5em}|}%
+  }%
+  \ifstrequal{#4}{}{}{%
+    \hspace{0.5em}\href{#4}{\faLink}%
+  }\par
+  \smallskip\normalsize
+
+  % Description
+  \ifstrequal{#5}{}{}{%
+    \textbf{\color{accent}#5}\par
+    \smallskip
+  }
+
+  % Tech Stack
+  \ifstrequal{#5}{}{}{%
+    \foreach \tech in {#6} {%
+      \cvtag{\tech}
+    }\par
+  }
+
+  \smallskip\normalsize
+}
+
+\newcommand{\cvcertification}[2]{%
+  {\large\color{emphasis}#1 } \hfill \href{#2}{\faArrowRight}\par
+  \smallskip\normalsize
 }

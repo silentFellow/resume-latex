@@ -39,24 +39,23 @@
 % Change the colours if you want to
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
-\definecolor{DarkPastelRed}{HTML}{450808}
-\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{DarkPastelBlack}{HTML}{181818} % DarkPastelRed 450808
+\definecolor{PastelBlack}{HTML}{292929} % PastelRed 8F0D0D
 \definecolor{GoldenEarth}{HTML}{E7D192}
 \colorlet{name}{black}
-\colorlet{tagline}{PastelRed}
-\colorlet{heading}{DarkPastelRed}
+\colorlet{tagline}{PastelBlack}
+\colorlet{heading}{DarkPastelBlack}
 \colorlet{headingrule}{GoldenEarth}
-\colorlet{subheading}{PastelRed}
-\colorlet{accent}{PastelRed}
+\colorlet{subheading}{PastelBlack}
+\colorlet{accent}{PastelBlack}
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
 
 % Change some fonts, if necessary
 \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
 \renewcommand{\personalinfofont}{\footnotesize}
-\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsectionfont}{\Large\rmfamily\bfseries}
 \renewcommand{\cvsubsectionfont}{\large\bfseries}
-
 
 % Change the bullets for itemize and rating marker
 % for \cvskill if you want to
@@ -82,22 +81,24 @@
 % \usepackage{academicons}\let\faOrcid\aiOrcid
 \begin{document}
 \name{Gowtham S}
-\tagline{Tech Enthusiast | Passionate Developer from India | Aficionado of CLI, Linux, and Open-Source | Crafting Elegant Solutions with Precision ⚡️}
+\tagline{Tech Enthusiast | Passionate Developer from India | Passionate about Linux, CLI and Open-Source | Crafting Elegant Solutions with Precision ⚡️}
 \photo{2.8cm}{profile}
 
 \personalinfo{%
   % Not all of these are required!
   \email{gowtham.sri@zohomail.in}
-  \phone{739-58-31324}
-  \mailaddress{132, Kavindachipalayam, Erode-638115}
+  \phone{+91 739-583-1324}
   \location{Tamilnadu, India}
-  \homepage{gowtham-portfolio-5idn.onrender.com}
-  \linkedin{silentFellow}
-  \github{silentFellow}
 
+
+  \\ \vspace{1em}
   \newcommand{\faLeetCode}{\hspace{1mm}\includegraphics[height=1em]{leetcode.png}}
-\printinfo{\faLeetCode}{silentFellow}[https://leetcode.com/u/silentFellow]}
-
+  \href{https://github.com/silentFellow}{\faGithub} \hspace{0.5em} | \hspace{0.5em}
+  \href{https://www.linkedin.com/in/silentFellow}{\faLinkedin} \hspace{0.5em} | \hspace{0.5em}
+  \href{https://gowtham-portfolio-5idn.onrender.com}{\faGlobe} \hspace{0.5em} | \hspace{0.5em}
+  \href{https://leetcode.com/u/silentFellow}{\faLeetCode}
+  \par
+}
 
 \makecvheader
 %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
@@ -109,6 +110,23 @@
 % Start a 2-column paracol. Both the left and right columns will automatically
 % break across pages if things get too long.
 \begin{paracol}{2}
+
+% if more things, then use multicol
+% \usepackage{multicol}
+% \begin{multicols}{2}
+% \begin{itemize}
+%     \item ...
+% \end{itemize}
+% \end{multicols}
+\cvsection{Area of Interest}
+\begin{itemize}
+    \item Full-Stack Development
+    \item Deep Learning
+    \item Linux \& CLI
+    \item Open Source Contribution
+    \item API Design & Microservices Architecture
+\end{itemize}
+
 \cvsection{Experience}
 
 \cvevent{Freelancing at \href{https://greencollar.ai/}{greencollar.ai}}{}{November 2023 - April 2024}{India}
@@ -122,39 +140,49 @@
 
 \cvsection{Projects}
 
-\cvevent{NeoUrl}{A URL shortener}{\httplink{https://neourl.onrender.com}}{}
-\begin{itemize}
-    \item A simple, yet powerful URL shortener written in go + htmx.
-\end{itemize}
+\cvproject
+  {NeoUrl}
+  {https://github.com/silentFellow/neourl.git}
+  {https://neourl.onrender.com}
+  {}
+  {A URL shortener written in Go and htmx. It allows users to shorten URLs, track clicks, and manage links.}
+  {Go, htmx}
 
 \divider
 
-\cvevent{Cred}{CLI tool for managing passwords and environment variables}{\httplink{https://github.com/silentFellow/cred}}{}
-\begin{itemize}
-    \item Encrypts data using a GPG key for secure storage.
-\end{itemize}
+\cvproject
+  {Cred}
+  {https://github.com/silentFellow/cred.git}
+  {}
+  {}
+  {A CLI tool built for managing passwords and environment variables. It uses GPG for secure data encryption and store data in Git repository.}
+  {Go, Cobra Cli}
 
 \divider
 
-\cvevent{Abstract-UI}{Component Library for React and Next.js}{\httplink{https://www.npmjs.com/package/@silentfellow/abstract-ui}}{}
-\begin{itemize}
-    \item A library of reusable UI components to speed up web development.
-\end{itemize}
+\cvproject
+  {Abstract-UI}
+  {https://github.com/silentFellow/abstract-ui.git}
+  {https://abstract-ui.onrender.com}
+  {https://www.npmjs.com/package/@silentfellow/abstract-ui}
+  {A component library for React and Next.js. It offers reusable UI components to speed up web development.}
+  {React, TypeScript, Tailwind CSS, Storybook}
 
 \divider
 
-\cvevent{NeoBlog}{A feature-rich blogging platform}{\httplink{https://neoblog.onrender.com}}{}
-\begin{itemize}
-    \item Built with Next.js, includes authentication and rich text editing.
-\end{itemize}
-
-\divider
+\cvproject
+  {NeoBlog}
+  {https://github.com/silentFellow/neoblog.git}
+  {https://neoblog.onrender.com}
+  {}
+  {A blogging platform built with Next.js. Features rich text editing, multimedia support, and SEO optimization.}
+  {NextJs, React, TypeScript, Tailwind CSS, Shadcn-UI, PostgresSQL}
 
 \medskip
 
 \cvsection{Certifications}
 
-\cvevent{MongoDB Associate Developer}{MongoDB University}{\httplink{https://learn.mongodb.com/c/o4uMvThfQDuYpcjprIEyWg}}{}
+\cvcertification{MongoDB Associate Developer}{https://learn.mongodb.com/c/o4uMvThfQDuYpcjprIEyWg}
 
 \switchcolumn
 
@@ -163,9 +191,13 @@
 {\LaTeXraggedright
 \cvtag{Curious}
 \cvtag{Smart-Working}
-\cvtag{Hard-Working}
 \cvtag{Leadership}
-\cvtag{Teamwork}
+\cvtag{Teamwork and Collaboration}
+\cvtag{Creativity}
+\cvtag{Lateral Thinking}
+\cvtag{Quick Learner}
+\cvtag{Empathy}
+\cvtag{Strong Intuition}
 \par}
 
 \cvsection{Tech Stack}
@@ -197,6 +229,7 @@
 \cvtag{Cred}
 \cvtag{Ente-Auth}
 \cvtag{Bruno}
+\cvtag{Postman}
 \par}
 
 \medskip
@@ -212,7 +245,6 @@
 \divider
 
 \cvevent{SSLC - 89.80\%}{Navarasam Matric. Hr. Sec. School}{Mar 2019}{}
-89.08\%
 
 \divider
 
