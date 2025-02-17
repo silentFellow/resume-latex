@@ -148,12 +148,13 @@
 }
 
 \RequirePackage{accsupp}
-\definecolor{PastelBlack}{HTML}{292929} % PastelRed 8F0D0D
-\definecolor{SlateGrey}{HTML}{2E2E2E}
-\colorlet{accent}{PastelBlack}
-\colorlet{emphasis}{SlateGrey}
+
 
 % defined for my use
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{PastelBlack}{HTML}{292929} % PastelRed 8F0D0D
+\colorlet{accent}{PastelBlack}
+\colorlet{emphasis}{SlateGrey}
 \newcommand{\cvDateMarker}{\faCalendar[regular]}
 
 \newcommand{\cvevent}[5]{%
@@ -179,4 +180,40 @@
     \small #5 \par
   }
   \medskip\normalsize
+}
+
+\newcommand{\cvproject}[6]{%
+  % Title with GitHub, Web links, and Extra link
+  {\large\color{emphasis}#1} \hfill
+  \ifstrequal{#2}{}{}{%
+    \hspace{0.5em}\href{#2}{\faGithub}%
+  }%
+  \ifstrequal{#3}{}{}{%
+    \ifstrequal{#2}{}{}{\hspace{0.5em}|}%
+  }%
+  \ifstrequal{#3}{}{}{%
+    \hspace{0.5em}\href{#3}{\faGlobe}%
+  }%
+  \ifstrequal{#4}{}{}{%
+    \ifstrequal{#4}{}{}{\hspace{0.5em}|}%
+  }%
+  \ifstrequal{#4}{}{}{%
+    \hspace{0.5em}\href{#4}{\faLink}%
+  }\par
+  \smallskip\normalsize
+
+  % Description
+  \ifstrequal{#5}{}{}{%
+    \textbf{\color{accent}#5}\par
+    \smallskip
+  }
+
+  % Tech Stack
+  \ifstrequal{#5}{}{}{%
+    \foreach \tech in {#6} {%
+      \cvtag{\tech}
+    }\par
+  }
+
+  \smallskip\normalsize
 }
