@@ -522,8 +522,12 @@
 
   % Description
   \ifstrequal{#5}{}{}{%
+    \justifying
+    \hyphenpenalty=10000  % Discourage hyphenation
+    \exhyphenpenalty=10000  % Prevent line breaks at explicit hyphens
     \textbf{\color{accent}#5}\par
     \smallskip
+    \raggedright
   }
 
   % Tech Stack
