@@ -1,0 +1,259 @@
+% =========================
+% Main Resume File
+% =========================
+\documentclass[11pt,a4paper]{article}
+
+% -------------------------------------------------
+% Required packages for fonts, colors, and layout
+% -------------------------------------------------
+\usepackage[top=1.2cm, bottom=1.2cm, left=1.2cm, right=1.2cm]{geometry}
+\usepackage[hidelinks]{hyperref}  % clickable links without boxes
+
+% -------------------------------------------------
+% Custom Styles
+% -------------------------------------------------
+\input{styles}
+
+% -------------------------------------------------
+% Document starts here
+% -------------------------------------------------
+\begin{document}
+
+% Intro Section (No centering)
+{\headingstyle Hi, I'm {\namefont Gowtham.S}} \\[0.5em]
+{\subheadingstyle A tech enthusiast with a passion for Linux, CLI, and open-source, driven by curiosity and a focus on problem-solving, innovation, and building impactful technology solutions.}
+
+% Contact Section
+{\color{accent}
+\small
+\noindent
+  \accentlink{mailto:gowtham.sri@zohomail.in}{gowtham.sri@zohomail.in} \quad \textbar{} \quad
+  \accentlink{tel:+917395831324}{+91-73958-31324} \quad \textbar{} \quad
+  \accentlink{https://github.com/silentFellow}{github.com/silentFellow} \quad \textbar{} \quad
+  \accentlink{https://linkedin.com/in/silentFellow}{linkedin.com/in/silentFellow} \quad \quad \\
+  \accentlink{https://leetcode.com/silentFellow}{leetcode.com/silentFellow} \quad \textbar{} \quad
+  \accentlink{https://gowthams-portfolio.vercel.app}{gowthams-portfolio.vercel.app} \quad \textbar{} \quad
+  \accentlink{https://www.google.com/maps/place/Tamil+Nadu,+India/}{Tamil Nadu, IN}
+}
+
+\divider  % ← This creates the horizontal split
+
+% =========================
+% Professional Summary
+% =========================
+\heading{Professional Summary}
+\begin{body}
+Results-driven Software Engineer with 3+ years of experience building cross-platform, production-grade applications serving 1000+ users and leading 2 cross-functional project deliveries. Expertise in {\techstyle{Go, TypeScript, and system programming}} with proven track record of published tools {\techstyle{(NPM packages, CLI utilities).}} Passionate about {\techstyle{Linux systems, open-source technologies}}, and creating innovative technical solutions across diverse domains, while continuously learning emerging technologies.
+\end{body}
+
+% =========================
+% Experience
+% =========================
+\heading{Experience}
+\listStart
+\begin{body}
+
+\itemWithTitleAndSubHeading
+{\href{https://greencollar.ai}{\subheadingstyle{Green Collar Agritech Solutions}}}{Bengaluru, IN}
+{Freelancer → Student Intern → Software Intern}{Nov 2023 -- Present}
+\sublistStart
+\subBullet{
+  Built responsive web applications using {\techstyle{React.js and Next.js}}, serving 500+ daily active users
+}
+\subBullet{
+  Optimized application performance by 40% through {\techstyle{TanStack Query caching}} implementation
+}
+\subBullet{
+  Enhanced {\textbf{SEO performance}} through {\techstyle{server-side rendering}}, increasing organic traffic by 25%
+}
+\subBullet{
+  Developed cross-platform desktop and mobile application with {\techstyle{Flutter}}, implementing responsive UI and native performance optimization
+}
+\subBullet{
+  Collaborated with 5+ engineers in agile environment, consistently delivering features on schedule across multiple sprint cycles
+}
+\subBullet{
+  Participated in **daily standups and sprint planning** with development team, consistently meeting project deadlines and **contributing to technical discussions**
+}
+\sublistEnd
+
+\end{body}
+\listEnd
+
+% =========================
+% Projects
+% =========================
+\heading{Projects}
+\listStart
+\begin{body}
+
+\itemWithTitleAndSubHeading
+{\subheadingstyle{Cred - Secure CLI Password Manager}}
+{
+  \accentlink{https://github.com/silentFellow/cred.git}{GitHub} \quad \textbar{} \quad
+  \accentlink{https://silentfellow.github.io/cred/book}{Docs}
+}
+{Go \textbar{} Cobra CLI}
+{}
+\sublistStart
+\subBullet{
+  Developed production-ready CLI tool for {\textbf{secure password, environment variable}} and SSH keys management
+}
+\subBullet{
+  Implemented {\techstyle{GPG encryption}} with {\techstyle{Git-based storage enabling version control}} and audit trails
+}
+\subBullet{
+  Achieved zero-knowledge architecture with client-side encryption
+}
+\subBullet{
+  Reduced credentials management overhead by 60% through streamlined CLI workflows for users
+}
+\subBullet{
+  Built comprehensive documentation with 20+ command examples and security best practices guide
+}
+\sublistEnd
+
+\itemWithTitleAndSubHeading
+{\subheadingstyle{Abstract-UI - React Component Library}}
+{
+  \accentlink{https://github.com/silentFellow/abstract-ui.git}{GitHub} \quad \textbar{} \quad
+  \accentlink{https://abstract-ui-olive.vercel.app}{Live Demo} \quad \textbar{} \quad
+  \accentlink{https://www.npmjs.com/package/@silentfellow/abstract-ui}{NPM}
+}
+{React \textbar{} TypeScript \textbar{} Tailwind CSS \textbar{} Storybook}
+{}
+\sublistStart
+\subBullet{
+  Created reusable component library published to {\techstyle{NPM}} with 100+ weekly downloads
+}
+\subBullet{
+  Built comprehensive {\techstyle{Storybook}} documentation with 12+ components with 30+ configurable variants
+}
+\subBullet{
+  Reduced development time by 30% for {\techstyle{React/Next.js}} applications through standardized design system
+}
+\subBullet{
+  Integrated {\techstyle{TypeScript}} for type safety and improved developer experience
+}
+\subBullet{
+  Achieved 95%+ developer satisfaction through intuitive API design and comprehensive TypeScript definitions
+}
+\sublistEnd
+
+\itemWithTitleAndSubHeading
+{\subheadingstyle{L2Shift - Cross-Platform MAC Address Manager}}
+{
+  \accentlink{https://github.com/silentFellow/l2shift.git}{GitHub}
+}
+{C \textbar{} System programming}
+{}
+\sublistStart
+\subBullet{
+  Engineered cross-platform CLI tool for {\textbf{MAC}} address modification using native system APIs
+}
+\subBullet{
+  Implemented Linux support via {\textbf{direct syscalls}} and macOS compatibility through {\techstyle{ifconfig}} integration
+}
+\subBullet{
+  Achieved 100\% success rate across multiple Linux distributions and macOS versions
+}
+\subBullet{
+  Demonstrated {\textbf{advanced networking}} knowledge and {\textbf{low-level system programming}} expertise
+}
+\subBullet{
+  Created intuitive command-line interface with help system and validation, reducing user errors by 80%
+}
+\sublistEnd
+
+\itemWithTitleAndSubHeading
+{\subheadingstyle{NeoUrl - High-Performance URL Shortener}}
+{
+  \accentlink{https://github.com/silentFellow/neourl.git}{GitHub} \quad \textbar{} \quad
+  \accentlink{http://43.204.114.237:8080}{Live}
+}
+{Go \textbar{} HTMX}
+{}
+\sublistStart
+\subBullet{
+  Built lightweight URL shortening service with {\techstyle{Go backend}} and modern {\techstyle{HTMX frontend}}
+}
+\subBullet{
+  Implemented efficient URL mapping algorithm with {\textbf{collision detection}} and custom short codes
+}
+\subBullet{
+  Deployed on {\textbf{cloud infrastructure}} serving 500+ daily URL conversions with 99.9% uptime
+}
+\subBullet{
+  Optimized for performance achieving {\textbf{sub-100ms response times}} with minimal resource usage
+}
+\subBullet{
+  Built smart caching mechanism that reuses shortened endpoints for duplicate URLs, improving response efficiency by 45%
+}
+\sublistEnd
+
+% \itemWithTitleAndSubHeading
+% {\subheadingstyle{NeoBlog - Full-Stack Blogging Platform}}
+% {
+%   \accentlink{https://github.com/silentFellow/neoblog.git}{GitHub} \quad \textbar{} \quad
+%   \accentlink{https://neoblog-ruddy.vercel.app}{Live}
+% }
+% {NextJs \textbar{} React \textbar{} TypeScript \textbar{} Tailwind CSS \textbar{} Shadcn-UI \textbar{} PostgreSQL}
+% {}
+% \sublistStart
+% \subBullet{
+%   Architected comprehensive blogging platform with {\textbf{rich text editor}} and multimedia support
+% }
+% \subBullet{
+%   Designed {\techstyle{PostgreSQL}} database schema supporting 10K+ posts with optimized query performance
+% }
+% \subBullet{
+%   Implemented {\textbf{SEO optimization}} features resulting in 30% improvement in search rankings
+% }
+% \subBullet{
+%   Built responsive UI with {\techstyle{Shadcn-UI components and server-side rendering}} for enhanced UX
+% }
+% \sublistEnd
+
+\end{body}
+\listEnd
+
+% =========================
+% Technical Skills
+% =========================
+\heading{Technical Skills}
+\listStart
+\begin{body}
+\itemWithTitle{\subheadingstyle{Languages}}{Go, TypeScript, JavaScript, Python, C/C++, Java, Dart, SQL}
+\itemWithTitle{\subheadingstyle{Frontend}}{React.js, Next.js, Flutter, HTML/CSS, Tailwind CSS, Shadcn-UI, TanStack Tools}
+\itemWithTitle{\subheadingstyle{Backend \& APIs}}{Node.js, Express.js, FastAPI, RESTful APIs, WebSockets}
+\itemWithTitle{\subheadingstyle{Databases}}{PostgreSQL, MongoDB, Database Design, Query Optimization}
+\itemWithTitle{\subheadingstyle{DevOps \& Tools}}{Linux, Docker/Podman, Git, AWS (EC2, S3), Shell Scripting, CI/CD}
+\itemWithTitle{\subheadingstyle{Development Tools}}{Neovim, Bruno/Postman, Storybook, Vite, ESLint, Prettier, Cobra CLI, tmux}
+\end{body}
+\listEnd
+
+% =========================
+% Education
+% =========================
+\heading{Education}
+\listStart
+\begin{body}
+\itemWithTitleAndSubHeading
+{Kongu Engineering College}{Tamilnadu, IN}
+{B.Tech in Artificial Intelligence \& Machine Learning; GPA: 8.90/10.0}{Nov.
+2022 -- May. 2026}
+\end{body}
+\listEnd
+
+
+% =========================
+% Achievements
+% =========================
+\heading{Achievements}
+\listStart
+\begin{body}
+\item Certified MongoDB Associate Developer{\accentlink{https://learn.mongodb.com/c/o4uMvThfQDuYpcjprIEyWg}{(License)}}
+\end{body}
+\listEnd
+
+\end{document}

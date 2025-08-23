@@ -1,0 +1,98 @@
+% =========================
+% Colors Setup (Warm Dark Subtle Palette)
+% =========================
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage[hidelinks]{hyperref}  % clickable links without boxes
+\usepackage{dashrule}             % for \hdashrule
+\usepackage{enumitem}             % Better lists
+
+\definecolor{heading}{HTML}{1B1B1B}      % Rich charcoal black
+\definecolor{subheading}{HTML}{262626}   % Deep warm gray
+\definecolor{bodytext}{HTML}{3A3A3A}     % Dark graphite with warm undertone
+\definecolor{accent}{HTML}{4A4E4A}       % Muted olive-gray
+\definecolor{subaccent}{HTML}{5C5346}    % Deep warm brown-gray
+
+% =========================
+% Fonts Setup
+% =========================
+
+% Path to fonts
+\newfontfamily\headingfont[
+    Path = fonts/CormorantGaramond/,
+    UprightFont    = CormorantGaramond-SemiBold.ttf,           % default normal text
+    ItalicFont     = CormorantGaramond-SemiBoldItalic.ttf,     % italic version
+    BoldFont       = CormorantGaramond-Bold.ttf,               % bold
+    BoldItalicFont = CormorantGaramond-BoldItalic.ttf,         % bold + italic
+]{CormorantGaramond}
+\newfontfamily\bodyfont[
+    Path = fonts/SourceSans3/,
+    UprightFont    = SourceSans3-Regular.ttf,       % normal weight
+    ItalicFont     = SourceSans3-Italic.ttf,        % true italics
+    BoldFont       = SourceSans3-Bold.ttf,          % bold
+    BoldItalicFont = SourceSans3-BoldItalic.ttf     % bold + italic
+]{SourceSans3}
+\newfontfamily\namefont[Path=fonts/]{PlayfairDisplay-SemiBold.ttf}
+
+% Shortcuts to apply font + color at once
+\newcommand{\headingstyle}{\headingfont\color{heading}\huge}
+\newcommand{\subheadingstyle}{\headingfont\color{subheading}\fontsize{14pt}{14pt}\selectfont}
+\newcommand{\bodystyle}{\bodyfont\color{bodytext}\normalsize}
+\newcommand{\namestyle}{\namefont\color{heading}} % Name gets heading color
+\newcommand{\accentstyle}{\bodyfont\color{accent}}
+\newcommand{\techstyle}{\bodyfont\color{subaccent}}
+
+% =========================
+% Custom Section Styles
+% =========================
+
+% Divider Rule
+\setlength{\parindent}{0pt}
+\newcommand{\divider}{\textcolor{accent}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\medskip}
+
+% Heading Rule
+\newcommand{\heading}[1]{
+  \vspace{10pt}
+  \headingstyle{#1} \\
+  \small
+  \divider
+}
+
+% Body Rule
+\newenvironment{body}{\bodystyle}
+
+% Accent link style
+\newcommand{\accentlink}[2]{\textcolor{accent}{\href{#1}{#2}}}
+
+% List style
+\newcommand{\listStart}{
+  \begin{itemize}
+    }
+    \newcommand{\listEnd}{
+  \end{itemize}
+}
+
+\newcommand{\sublistStart}{
+  \begin{itemize}
+    }
+    \newcommand{\sublistEnd}{
+  \end{itemize}
+}
+
+\newcommand{\subBullet}[1]{\item[$\circ$] {\small #1}}
+
+\newcommand{\itemWithTitle}[2]{
+\item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\itemWithTitleAndSubHeading}[4]{
+  \vspace{-1pt}
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
