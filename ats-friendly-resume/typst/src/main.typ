@@ -24,7 +24,7 @@
 #divider()
 
 #heading("Professional Summary")
-Results-oriented Software Engineer with 3+ years of experience building cross-platform, production-grade applications serving 1000+ users and experience leading 2 cross-functional project deliveries. Expertise in #techstyle[Go, TypeScript, and system programming] with proven track record of published tools #techstyle[(NPM packages, CLI utilities)]. Passionate about #techstyle[Linux systems, open-source technologies], and creating innovative technical solutions across diverse domains, while continuously learning emerging technologies.
+Results-oriented Software Engineer with 3+ years of experience building cross-platform, production-grade applications serving 1000+ users and leading 2 cross-functional projects. Expertise in #techstyle[Go, TypeScript, and system programming] with proven track record of published tools #techstyle[(NPM packages, CLI utilities)]. Passionate about #techstyle[Linux systems, open-source technologies], and creating innovative technical solutions across diverse domains, while continuously learning emerging technologies.
 
 #heading("Experience")
 #item-with-title-and-subheading(
@@ -34,9 +34,9 @@ Results-oriented Software Engineer with 3+ years of experience building cross-pl
   "Nov. 2023 -- Present",
   body: [
     - Engineered responsive web applications using #techstyle[React.js and Next.js] following software engineering best practices, serving 500+ daily active users
-    - Boosted application performance by 40% through #techstyle[TanStack Query caching] implementation
+    - Boosted application performance by 40% through #techstyle[TanStack Query caching] application
     - Improved #techstyle[SEO performance] through #techstyle[server-side rendering], increasing organic traffic by 25%
-    - Built and optimized cross-platform desktop and mobile application with #techstyle[Flutter], implementing responsive UI and native performance optimization
+    - Built and optimized cross-platform desktop and mobile applications with #techstyle[Flutter], applying responsive UI principles and native performance optimization
     - Partnered with 5+ engineers in Agile methodology, consistently delivering features on schedule across multiple sprint cycles through #techstyle[code reviews]
     - Contributed actively to #techstyle[daily Scrum standups and sprint planning] with development team, consistently meeting project deadlines and #techstyle[contributing to technical discussions]
   ],
@@ -53,8 +53,8 @@ Results-oriented Software Engineer with 3+ years of experience building cross-pl
   "",
   body: [
     - Developed production-ready CLI tool for #techstyle[secure password, environment variables,] and SSH key management
-    - Implemented #techstyle[GPG encryption] with #techstyle[Git-based storage enabling version control] and audit trails
-    - Achieved zero-knowledge architecture with client-side encryption
+    - Applied #techstyle[GPG encryption] with #techstyle[Git-based storage enabling version control] and audit trails
+    - Attained zero-knowledge architecture with client-side encryption
     - Reduced credentials management overhead by 60% through streamlined CLI workflows for users
     - Created comprehensive documentation with 20+ command examples and security best practices guide
   ],
@@ -70,11 +70,11 @@ Results-oriented Software Engineer with 3+ years of experience building cross-pl
   "React  |  TypeScript  |  Tailwind CSS  |  Storybook",
   "",
   body: [
-    - Built and published a reusable accessibility-first component library published to #techstyle[NPM] with 100+ weekly downloads
+    - Built and released a reusable accessibility-first component library to #techstyle[NPM] with 100+ weekly downloads
     - Documented 12+ components with 30+ configurable variants in #techstyle[Storybook]
     - Reduced development time by 30% for #techstyle[React/Next.js] applications through a standardized design system
     - Integrated #techstyle[TypeScript] for type safety and improved developer experience
-    - Achieved 95%+ developer satisfaction through intuitive API design and comprehensive TypeScript definitions
+    - Realized 95%+ developer satisfaction through intuitive API design and comprehensive TypeScript definitions
   ],
 )
 
@@ -85,8 +85,8 @@ Results-oriented Software Engineer with 3+ years of experience building cross-pl
   "",
   body: [
     - Engineered cross-platform CLI tool for #techstyle[MAC address] modification using native system APIs
-    - Implemented Linux support via #techstyle[direct syscalls] and macOS compatibility through #techstyle[ifconfig] integration
-    - Achieved 100% success rate across multiple Linux distributions and macOS versions
+    - Executed Linux support via #techstyle[direct syscalls] and macOS compatibility through #techstyle[ifconfig] integration
+    - Attained 100% success rate across multiple Linux distributions and macOS versions
     - Demonstrated #techstyle[advanced networking] knowledge and #techstyle[low-level system programming] expertise
     - Designed an intuitive command-line interface with help system and validation, reducing user errors by 80%
   ],
@@ -100,11 +100,11 @@ Results-oriented Software Engineer with 3+ years of experience building cross-pl
   "Go  |  HTMX",
   "",
   body: [
-    - Developed #techstyle[cloud-native] URL shortening service with #techstyle[Go backend] and modern #techstyle[HTMX frontend]
+    - Enhanced #techstyle[cloud-native] URL shortening service with #techstyle[Go backend] and modern #techstyle[HTMX frontend]
     - Implemented efficient URL mapping algorithm with #techstyle[collision detection] and custom short codes
     - Deployed on #techstyle[cloud infrastructure] serving 500+ daily URL conversions with 99.9% uptime
-    - Optimized for performance achieving #techstyle[sub-100ms response times] with minimal resource usage
-    - Implemented smart caching layers for database optimization that reuses shortened endpoints for duplicate URLs, improving response efficiency by 45%
+    - Optimized performance, achieving #techstyle[sub-100ms response times] with minimal resource usage
+    - Applied smart caching layers for database optimization that reuses shortened endpoints for duplicate URLs, improving response efficiency by 45%
   ],
   isLast: true,
 )
