@@ -1,0 +1,4 @@
+build:
+  @echo "Building..."
+  @mkdir -p output
+  @typst compile --font-path src/fonts src/main.typ output/gowthams_ats_friendly_resume.pdf
