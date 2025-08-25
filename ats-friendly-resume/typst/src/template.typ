@@ -1,6 +1,6 @@
 // setup.typ
 #import "colors.typ": *
-#import "fonts.typ": bodyfont, bodytext
+#import "fonts.typ": *
 
 #let apply_setup(doc) = [
   #set page(
@@ -14,12 +14,12 @@
     numbering: none,
   )
 
-  #set par(justify: true, first-line-indent: 0pt, leading: 0.45em, spacing: 0.6em)
+  #set par(justify: true, first-line-indent: 0pt, leading: 0.45em, spacing: 0.65em)
 
   #set text(
     font: bodyfont,
     fill: bodytext,
-    size: 11pt,
+    size: 11.5pt,
     weight: "regular",
     hyphenate: false
   )

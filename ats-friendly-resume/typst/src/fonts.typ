@@ -21,7 +21,7 @@
 #let subheadingstyle = text.with(
   font: headingfont,
   fill: subheading,
-  size: 14pt,
+  size: 15pt,
   weight: "semibold"
 )
 
@@ -41,7 +41,7 @@
 
 #let techstyle = text.with(
   font: bodyfont,
-  fill: subaccent,
+  fill: accent,
   size: 11pt,
-  weight: "regular"
+  weight: "bold"
 )
