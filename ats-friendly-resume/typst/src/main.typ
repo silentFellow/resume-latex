@@ -14,17 +14,17 @@
 #subheadingstyle[A tech enthusiast with a passion for Linux, CLI, and open-source, driven by curiosity and a focus on problem-solving, innovation, and building impactful technology solutions.]
 
 #accentlink("mailto:gowtham.sri@zohomail.in", "gowtham.sri@zohomail.in") #h(0.6em) | #h(0.6em)
-#accentlink("tel:+90.67395830.6324", "+91-73958-31324") #h(0.6em) | #h(0.6em)
+#accentlink("tel:+917395831324", "+91-73958-31324") #h(0.6em) | #h(0.6em)
 #accentlink("https://github.com/silentFellow", "github.com/silentFellow") #h(0.6em) | #h(0.6em)
 #accentlink("https://linkedin.com/in/silentFellow", "linkedin.com/in/silentFellow") \
 #accentlink("https://leetcode.com/silentFellow", "leetcode.com/silentFellow") #h(0.6em) | #h(0.6em)
-#accentlink("https://gowthams-portfolio.vercel.app", "gowthams-portfolio.vercel.app") #h(0.6em) | #h(0.6em)
+#accentlink("https://silentFellow.dev", "Portfolio") #h(0.6em) | #h(0.6em)
 #accentlink("https://www.google.com/maps/place/Tamil+Nadu,+India/", "Tamil Nadu, IN")
 
 #divider()
 
 #heading("Professional Summary")
-Results-oriented Software Engineer with 3+ years of experience building cross-platform, production-grade applications serving 1000+ users and leading 2 cross-functional projects. Expertise in #techstyle[Go, TypeScript, and system programming] with proven track record of published tools #techstyle[(NPM packages, CLI utilities)]. Passionate about #techstyle[Linux systems, open-source technologies], and creating innovative technical solutions across diverse domains, while continuously learning emerging technologies.
+Results-oriented Software Engineer with 3+ years of experience building cross-platform, production-grade applications serving over 1000+ users. Expertise in #techstyle[Go, TypeScript, and system programming] with a passion for #techstyle[Linux systems and open-source technologies]. Proven track record of shipping production tools, including #techstyle[NPM packages and CLI utilities], and leading cross-functional projects.
 
 #heading("Experience")
 #item-with-title-and-subheading(
@@ -48,7 +48,7 @@ Results-oriented Software Engineer with 3+ years of experience building cross-pl
   "Cred - Secure CLI Password Manager",
   link("https://github.com/silentFellow/cred.git")[GitHub] +
     "  |  "   +
-    link("https://silentfellow.github.io/cred/book")[Docs],
+    link("https://cred.silentfellow.dev/book")[Docs],
   "Go | Cobra CLI",
   "",
   body: [
@@ -64,7 +64,7 @@ Results-oriented Software Engineer with 3+ years of experience building cross-pl
   "Abstract-UI - React Component Library",
   link("https://github.com/silentFellow/abstract-ui.git")[GitHub] +
     "  |  "   +
-    link("https://abstract-ui-olive.vercel.app")[Demo] +
+    link("https://abstract-ui.silentfellow.dev")[Demo] +
     "  |  "   +
     link("https://www.npmjs.com/package/@silentfellow/abstract-ui")[NPM],
   "React  |  TypeScript  |  Tailwind CSS  |  Storybook",
@@ -77,6 +77,8 @@ Results-oriented Software Engineer with 3+ years of experience building cross-pl
     - Realized 95%+ developer satisfaction through intuitive API design and comprehensive TypeScript definitions
   ],
 )
+
+#pagebreak()
 
 #item-with-title-and-subheading(
   "L2Shift - Cross-Platform MAC Address Manager",
