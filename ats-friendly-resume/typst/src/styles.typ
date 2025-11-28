@@ -14,6 +14,7 @@
     dash: "dashed"
   ))
 }
+
 // Link function with accent color
 #let accentlink(url, text) = {
   link(url)[#accentstyle[#text]]

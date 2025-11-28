@@ -17,8 +17,9 @@
 #accentlink("tel:+917395831324", "+91-73958-31324") #h(0.6em) | #h(0.6em)
 #accentlink("https://github.com/silentFellow", "github.com/silentFellow") #h(0.6em) | #h(0.6em)
 #accentlink("https://linkedin.com/in/silentFellow", "linkedin.com/in/silentFellow") \
+#accentlink("https://silentFellow.dev", "silentFellow.dev") #h(0.6em) | #h(0.6em)
+#accentlink("https://blogs.silentFellow.dev", "blogs.silentFellow.dev") #h(0.6em) | #h(0.6em)
 #accentlink("https://leetcode.com/silentFellow", "leetcode.com/silentFellow") #h(0.6em) | #h(0.6em)
-#accentlink("https://silentFellow.dev", "Portfolio") #h(0.6em) | #h(0.6em)
 #accentlink("https://www.google.com/maps/place/Tamil+Nadu,+India/", "Tamil Nadu, IN")
 
 #divider()
@@ -48,7 +49,7 @@ Results-oriented Software Engineer with 3+ years of experience building cross-pl
   "Cred - Secure CLI Password Manager",
   link("https://github.com/silentFellow/cred.git")[GitHub] +
     "  |  "   +
-    link("https://cred.silentfellow.dev/book")[Docs],
+    link("https://cred.silentfellow.dev")[Docs],
   "Go | Cobra CLI",
   "",
   body: [
